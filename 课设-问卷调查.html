@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>问卷调查</title>
+  <style>
+    textarea {
+      width: 400px;
+      height: 50px;
+    }
+    img {
+      float:right;
+      width: 400px;
+      height: 400px;
+    }
+    div {
+      background-color:pink;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <form>
+      <h2>问卷调查</h2>
+      <h3>个人信息</h3>
+      <label>姓名：</label><input type="text" placeholder="请输入真实姓名"> <img src="./images/1.png">
+        <br><br>
+      <label>电话号码：</label><input type="text" placeholder="请输入电话号码">
+        <br><br>
+      <label>身份证号：</label><input type="text" placeholder="请输入身份证号">
+        <br><br>
+      <label>性别：</label>
+      <label><input type="radio" name="gender">男</label>
+      <label><input type="radio" name="gender" checked>女</label><br><br>
+      <label>是否已婚：</label>
+      <select>
+        <option selected >是</option>
+        <option>否</option>
+      </select><br><br>
+      <label>户籍：</label><input type="text" placeholder="请输入户籍">
+        <br><br>
+        居住楼层：
+        <select>
+          <option selected>1F</option>  
+          <option>2F</option>  
+          <option>3F</option>  
+          <option>4F</option>  
+          <option>5F</option>  
+        </select>
+      <h3>客户反馈</h3>
+        <label>您目前的居住满意度怎么样？</label><br><br>
+        <label><input type="radio" name="satification">特别满意</label>
+        <label><input type="radio" name="satification">满意</label>
+        <label><input type="radio" name="satification">一般</label>
+        <label><input type="radio" name="satification">不满意</label>
+        <label><input type="radio" name="satification">特别不满意</label><br><br>
+        <label>您对销售人员服务态度满意吗？</label><br><br>
+        <label><input type="radio" name="satification">特别满意</label>
+        <label><input type="radio" name="satification">满意</label>
+        <label><input type="radio" name="satification">一般</label>
+        <label><input type="radio" name="satification">不满意</label>
+        <label><input type="radio" name="satification">特别不满意</label><br><br>
+        <label>您对房地产的地理位置满意吗？</label><br><br>
+        <label><input type="radio" name="satification">特别满意</label>
+        <label><input type="radio" name="satification">满意</label>
+        <label><input type="radio" name="satification">一般</label>
+        <label><input type="radio" name="satification">不满意</label>
+        <label><input type="radio" name="satification">特别不满意</label><br><br>
+        <label>您对房屋面积和布局满意吗？</label><br><br>
+        <label><input type="radio" name="satification">特别满意</label>
+        <label><input type="radio" name="satification">满意</label>
+        <label><input type="radio" name="satification">一般</label>
+        <label><input type="radio" name="satification">不满意</label>
+        <label><input type="radio" name="satification">特别不满意</label><br><br>
+        <label>您对房地产中介机构的服务态度满意吗？</label><br><br>
+        <label><input type="radio" name="satification">特别满意</label>
+        <label><input type="radio" name="satification">满意</label>
+        <label><input type="radio" name="satification">一般</label>
+        <label><input type="radio" name="satification">不满意</label>
+        <label><input type="radio" name="satification">特别不满意</label><br><br>
+        <label>您对房地产开发商需要改进的方面和建议？</label><br>
+        <textarea></textarea><br><br>
+        您购房时最关注的因素： <br><br>
+        <input type="checkbox">房屋位置
+        <input type="checkbox">面积
+        <input type="checkbox">户型
+        <input type="checkbox">质量
+        <input type="checkbox">物联管理
+        <input type="checkbox">周边配套设施
+        <input type="checkbox">交通便利性
+        <input type="checkbox">绿化环境
+        <br><br>
+        <input type="checkbox"> 已同意并同意以下协议:
+        <ul>
+          <li><a href="#">《用户服务协议》</a></li>
+          <li><a href="#">《隐私协议》</a></li>
+        </ul>
+      </label>
+      <button type="submit">谢谢您的反馈</button>
+      <button type="reset">重新填写</button>
+    </form>
+  </div>
+</body>
+</html>
